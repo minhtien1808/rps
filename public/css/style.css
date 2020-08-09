@@ -1,0 +1,182 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        ul li {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .container {
+            margin: 20px 275px;
+        }
+        /* logo */
+        
+        .logo {
+            margin-top: 25px;
+            float: left;
+        }
+        /* menu */
+        
+        .menu {
+            float: left;
+        }
+        
+        div.img-icon {
+            width: 60%;
+        }
+        
+        div.img-icon img {
+            width: 100%;
+        }
+        
+        .main-menu>li {
+            display: inline-block;
+            width: 100px;
+            position: relative;
+        }
+        
+        .main-menu>li>a {
+            font-size: 14px;
+            text-transform: uppercase;
+            color: black;
+        }
+        
+        li.socks {
+            width: 110px;
+            padding-left: 15px;
+        }
+        /* sub menu */
+        
+        ul.sub-menu {
+            position: absolute;
+            background: #f1eaea;
+            width: 240px;
+            display: none;
+        }
+        
+        .main-menu>li:hover ul.sub-menu {
+            display: block;
+            z-index: 9999;
+        }
+        
+        ul.sub-menu li {
+            padding-bottom: 10px;
+            padding-top: 10px;
+        }
+        
+        ul.sub-menu a {
+            color: black;
+            padding: 10px;
+        }
+        /* shopping cart */
+        
+        .shopping-cart {
+            margin-top: 4%;
+            float: left;
+        }
+        /* button bottom */
+        
+        .button-bottom {
+            clear: both;
+        }
+        
+        .button-bottom-search {
+            float: left;
+            margin-left: 13%;
+        }
+        
+        input.button-bottom-input {
+            width: 700px;
+            height: 40px;
+            border-radius: 999px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        i.fas.fa-search {
+            position: absolute;
+            left: 1122px;
+            top: 140px;
+        }
+        
+        .button-bottom-order {
+            margin-left: 65%;
+        }
+        
+        i.fas.fa-phone-alt {
+            border: 1px solid;
+            border-radius: 999px;
+            padding: 10px;
+            background-color: lightgray;
+        }
+        
+        .button-bottom-order span {
+            font-size: 14px;
+        }
+        /* menu-rps */
+        
+        .menu-rps {
+            display: none;
+        }
+        
+        @media screen and (max-width:768px) {
+            .img-icon,
+            .button-bottom,
+            .menu,
+            .shopping-cart {
+                display: none;
+            }
+            .container {
+                padding: 50px 10px;
+            }
+            .logo {
+                display: block;
+                margin: 0 auto;
+            }
+            .menu-rps {
+                display: block;
+                background-color: black;
+                color: white;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                font-weight: bold;
+                padding: 1rem 0;
+            }
+            .menu-rps i,
+            .menu span {
+                margin-left: 2.5rem;
+                cursor: pointer;
+            }
+            .menu-rps ul {
+                padding-top: 1rem;
+                display: none;
+            }
+            .menu-rps ul li {
+                height: 3rem;
+                line-height: 3rem;
+                cursor: pointer;
+            }
+            .menu-rps ul li a {
+                text-decoration: none;
+                color: white;
+                padding-left: 2.5rem;
+            }
+            .fa-grip-lines {
+                color: black;
+            }
+            .menu-rps:hover .fa-grip-lines {
+                color: aqua;
+            }
+            .menu-rps ul li:hover {
+                background-color: #222121;
+            }
+            .menu-rps:hover ul {
+                display: block;
+            }
+        }
